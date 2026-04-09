@@ -1,18 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김민호</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김민호 | 포트폴리오</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Frameworks -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
-<body>
-    <h1><a href="#">KMH</a></h1>
-    <h2>개인 프로필</h2>
-    <h2>작품 소개</h2>
-    <footer>
-        <h2>연락처 정보  email: </h2>
-    </footer>
 
+<body class="bg-light">
 
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-all">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">MINHO KIM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-medium">
+          <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">기술</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">프로젝트</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+    <div class="hero-bg" style="background-image: url('assets/hero_bg.png');"></div>
+    <div class="container position-relative z-1 text-white">
+      <div class="row align-items-center">
+        <div class="col-lg-8 animate-up">
+          <span class="badge rounded-pill bg-primary px-3 py-2 mb-3 fs-6">신입 개발자</span>
+          <h1 class="display-1 fw-extrabold mb-4">안녕하세요, <br><span class="text-gradient">김민호</span>입니다.</h1>
+          <p class="lead mb-5 opacity-75 fs-4">창의성과 논리 사이의 가교 역할을 하는 <br>디지털 경험을 만들어 갑니다.</p>
+          <div class="d-flex gap-3">
+            <a href="#projects" class="btn btn-primary btn-lg px-4 py-3 rounded-pill fw-bold">프로젝트 보기</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-bold">대화하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section py-6">
+    <div class="container mt-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 animate-left">
+          <div class="glass-card p-2 rounded-4">
+            <img src="assets/profile_tony_developer.png"
+              class="img-fluid rounded-4 transition-all shadow-lg" alt="Profile" style="max-height: 400px; display: block; margin: 0 auto; filter: none;">
+          </div>
+        </div>
+        <div class="col-lg-7 animate-right">
+          <h2 class="section-title mb-4">나에 대해서</h2>
+          <p class="fs-5 text-secondary mb-4">
+            저는 사용자 중심의 직관적이고 아름다운 웹을 만드는데 열광하는 개발자 김민호입니다.
+            단순히 코드를 작성하는 것을 넘어, 비즈니스 가치를 창출하고 사용자의 삶을 개선하는 기술적 솔루션을 연구합니다.
+          </p>
+          <div class="row g-4 mt-2">
+            <div class="col-6">
+              <div class="info-card">
+                <h4 class="fw-bold mb-1">성명</h4>
+                <p class="text-secondary mb-0">김민호 (Minho Kim)</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <h4 class="fw-bold mb-1">이메일</h4>
+                <p class="text-secondary mb-0">minho031@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <h4 class="fw-bold mb-1">경력</h4>
+                <p class="text-secondary mb-0">신입 개발자</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="info-card">
+                <h4 class="fw-bold mb-1">위치</h4>
+                <p class="text-secondary mb-0">대한민국 성남/분당</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section py-6 bg-light-soft">
+    <div class="container mt-5">
+      <h2 class="section-title text-center mb-5">보유 기술 역량</h2>
+      <div class="row g-4">
+        <!-- Skill categories -->
+        <div class="col-md-6">
+          <div class="skill-card p-4 rounded-4 bg-white shadow-sm h-100">
+            <h4 class="mb-4 d-flex align-items-center"><i class="fa-solid fa-code text-primary me-2"></i> 프론트엔드
+              (Frontend)</h4>
+            <!-- HTML/CSS -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">HTML5 / CSS3</span>
+                <span class="percent" data-target="90">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill" style="width: 0%" data-width="90%"></div>
+              </div>
+            </div>
+            <!-- JS -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">JavaScript (ES6+)</span>
+                <span class="percent" data-target="85">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill" style="width: 0%" data-width="85%"></div>
+              </div>
+            </div>
+            <!-- jQuery -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">jQuery</span>
+                <span class="percent" data-target="80">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill" style="width: 0%" data-width="80%"></div>
+              </div>
+            </div>
+            <!-- React -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">React</span>
+                <span class="percent" data-target="75">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill" style="width: 0%" data-width="75%"></div>
+              </div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="skill-item">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Bootstrap</span>
+                <span class="percent" data-target="70">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill" style="width: 0%" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-card p-4 rounded-4 bg-white shadow-sm h-100">
+            <h4 class="mb-4 d-flex align-items-center"><i class="fa-solid fa-server text-success me-2"></i> 백엔드
+              (Backend)</h4>
+            <!-- Java -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Java</span>
+                <span class="percent" data-target="85">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill bg-success" style="width: 0%" data-width="85%"></div>
+              </div>
+            </div>
+            <!-- MySQL -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">MySQL</span>
+                <span class="percent" data-target="80">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill bg-success" style="width: 0%" data-width="80%"></div>
+              </div>
+            </div>
+            <!-- JSP -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">JSP & Servlet</span>
+                <span class="percent" data-target="80">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill bg-success" style="width: 0%" data-width="80%"></div>
+              </div>
+            </div>
+            <!-- Spring -->
+            <div class="skill-item mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Spring / Spring Boot</span>
+                <span class="percent" data-target="75">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill bg-success" style="width: 0%" data-width="75%"></div>
+              </div>
+            </div>
+            <!-- Thymeleaf -->
+            <div class="skill-item">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Thymeleaf</span>
+                <span class="percent" data-target="75">0%</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar-fill bg-success" style="width: 0%" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact Qualities (Combined into a dark card to restore previous look) -->
+      <div class="row mt-5 pt-4 border-top border-light animate-up">
+        <div class="col-12">
+          <div class="bg-dark text-white p-5 rounded-5 shadow-lg border border-primary border-opacity-25">
+            <div class="row text-center g-4">
+              <div class="col-md-3 col-6">
+                <h2 class="display-4 fw-bold mb-0 text-primary"><span data-count="100">0</span>%</h2>
+                <p class="opacity-75 fs-5">열정 (Passion)</p>
+              </div>
+              <div class="col-md-3 col-6">
+                <h2 class="display-4 fw-bold mb-0 text-success"><span data-count="100">0</span>%</h2>
+                <p class="opacity-75 fs-5">노력 (Effort)</p>
+              </div>
+              <div class="col-md-3 col-6">
+                <h2 class="display-4 fw-bold mb-0 text-info"><span data-count="100">0</span>%</h2>
+                <p class="opacity-75 fs-5">성실함 (Diligence)</p>
+              </div>
+              <div class="col-md-3 col-6">
+                <h2 class="display-4 fw-bold mb-0 text-danger"><span data-count="100">0</span>%</h2>
+                <p class="opacity-75 fs-5">협업능력 (Collaboration)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section py-6">
+    <div class="container mt-5">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-end mb-5">
+        <div>
+          <h2 class="section-title mb-0">주요 프로젝트</h2>
+          <p class="text-secondary mt-2">최근 진행한 주요 디지털 작업물입니다.</p>
+        </div>
+        <div>
+          <a href="https://github.com/minho60" class="btn btn-outline-dark rounded-pill fw-bold" target="_blank" rel="noopener noreferrer">GitHub 아카이브 보기</a>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <!-- Project 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="project-card position-relative overflow-hidden rounded-4 h-100 shadow-lg">
+            <img src="assets/dodram.png" class="img-fluid w-100" alt="Dashboard Project">
+            <div class="project-overlay d-flex flex-column justify-content-end p-4">
+              <div class="glass-bg p-3 rounded-3">
+                <span class="badge bg-primary mb-2">웹 애플리케이션</span>
+                <h3 class="text-white mb-2">쇼핑몰 페이지 제작</h3>
+                <p class="text-white opacity-75 small mb-3">웹 페이지 클론및 리뉴얼</p>
+                <div class="d-flex gap-2">
+                  <a href="https://dodram-jsp-wyo2.onrender.com/" class="btn btn-sm btn-light rounded-pill px-3" target="_blank" rel="noopener noreferrer">배포 확인</a>
+                  <a href="https://github.com/minho60/jsp-project" class="btn btn-sm btn-outline-light rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="project-card position-relative overflow-hidden rounded-4 h-100 shadow-lg">
+            <img src="assets/movreco.png" class="img-fluid w-100" alt="E-commerce Project">
+            <div class="project-overlay d-flex flex-column justify-content-end p-4">
+              <div class="glass-bg p-3 rounded-3">
+                <span class="badge bg-success mb-2">반응형 웹페이지 제작</span>
+                <h3 class="text-white mb-2">영화 리뷰 사이트 제작</h3>
+                <p class="text-white opacity-75 small mb-3"></p>
+                <div class="d-flex gap-2">
+                  <a href="https://movreco-app.onrender.com" class="btn btn-sm btn-light rounded-pill px-3" target="_blank" rel="noopener noreferrer">라이브 데모</a>
+                  <a href="https://github.com/minho60/spring-project" class="btn btn-sm btn-outline-light rounded-pill px-3" target="_blank" rel="noopener noreferrer"><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 (Placeholder) -->
+        <div class="col-lg-3 col-md-6">
+          <div class="project-card position-relative overflow-hidden rounded-4 h-100 shadow-lg">
+            <img src="assets/project1.png" class="img-fluid w-100" alt="Placeholder">
+            <div class="project-overlay d-flex flex-column justify-content-end p-4">
+              <div class="glass-bg p-3 rounded-3">
+                <span class="badge bg-info mb-2">개발 예정</span>
+                <h3 class="text-white mb-2">준비 중인 프로젝트 #3</h3>
+                <p class="text-white opacity-75 small mb-3">새로운 아이디어를 구상 중입니다. 곧 업데이트될 예정입니다.</p>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-light rounded-pill px-3" target="_blank" rel="noopener noreferrer">상세 정보</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 (Placeholder) -->
+        <div class="col-lg-3 col-md-6">
+          <div class="project-card position-relative overflow-hidden rounded-4 h-100 shadow-lg">
+            <img src="assets/project2.png" class="img-fluid w-100" alt="Placeholder">
+            <div class="project-overlay d-flex flex-column justify-content-end p-4">
+              <div class="glass-bg p-3 rounded-3">
+                <span class="badge bg-warning mb-2">기획 중</span>
+                <h3 class="text-white mb-2">준비 중인 프로젝트 #4</h3>
+                <p class="text-white opacity-75 small mb-3">창의적인 솔루션을 기획하고 있습니다. 기대해 주세요!</p>
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-light rounded-pill px-3" target="_blank" rel="noopener noreferrer">상세 정보</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section py-6 bg-light-soft">
+    <div class="container mt-5">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <h2 class="section-title mb-4">함께 더 나은 <br>미래를 <br><span class="text-gradient">만들어갑니다.</span></h2>
+          <p class="text-secondary mb-5">새로운 아이디어나 협업 제안은 언제든 환영입니다. 편하게 연락 주세요!</p>
+
+          <ul class="list-unstyled contact-info">
+            <li class="d-flex align-items-center mb-4">
+              <div class="icon-box me-3"><i class="fa-solid fa-envelope fs-4 text-primary"></i></div>
+              <div>
+                <p class="text-secondary small mb-0">이메일</p>
+                <p class="fw-bold mb-0">minho031@gmail.com</p>
+              </div>
+            </li>
+            <li class="d-flex align-items-center mb-4">
+              <div class="icon-box me-3"><i class="fa-solid fa-phone fs-4 text-success"></i></div>
+              <div>
+                <p class="text-secondary small mb-0">전화번호</p>
+                <p class="fw-bold mb-0">010-1234-5678</p>
+              </div>
+            </li>
+            <li class="d-flex align-items-center">
+              <div class="icon-box me-3"><i class="fa-solid fa-location-dot fs-4 text-danger"></i></div>
+              <div>
+                <p class="text-secondary small mb-0">위치</p>
+                <p class="fw-bold mb-0">경기도 성남시 분당구</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <div class="glass-card p-5 rounded-4 shadow-sm">
+            <form id="contact-form" action="https://formspree.io/f/xzdkzajv" method="POST">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">성함</label>
+                  <input type="text" name="name" class="form-control rounded-3" placeholder="예: 홍길동" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">이메일 주소</label>
+                  <input type="email" name="email" class="form-control rounded-3" placeholder="example@domain.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-bold">제목</label>
+                  <input type="text" name="subject" class="form-control rounded-3" placeholder="협업 문의 드립니다" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-bold">메시지 내용</label>
+                  <textarea name="message" class="form-control rounded-3" rows="5" placeholder="여러분의 아이디어를 공유해주세요..."
+                    required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold py-3 transition-all">
+                    메시지 보내기 <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-white border-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start">
+          <a class="navbar-brand fw-bold fs-3 text-dark mb-4 d-block" href="#">MINHO KIM</a>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="social-links d-flex justify-content-center gap-4">
+            <a href="#" class="social-icon"><i class="fa-brands fa-github fs-3"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in fs-3"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram fs-3"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-dribbble fs-3"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center text-md-end mt-4 mt-md-0">
+          <p class="text-secondary small mb-0">&copy; 2026 김민호. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
